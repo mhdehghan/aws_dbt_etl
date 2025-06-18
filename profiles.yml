@@ -1,0 +1,12 @@
+my_project:
+  outputs:
+    dev:
+      dbname: dev
+      host: {MY_HOST}.us-east-2.redshift-serverless.amazonaws.com
+      user: my_dbt_user
+      password: MYPASSWORD
+      port: 5439
+      schema: public
+      threads: 1
+      type: redshift
+  target: dev
